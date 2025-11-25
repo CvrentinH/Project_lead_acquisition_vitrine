@@ -1,9 +1,18 @@
 # LeadScanner – Automated SEO & Lead Acquisition Toolkit
 
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-3.41-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0-FF0000?style=for-the-badge&logo=sqlalchemy&logoColor=white)
+![React](https://img.shields.io/badge/React-18.2-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4.12-FF9900?style=for-the-badge&logo=python&logoColor=white)
+
+## Résumé
 LeadScanner est un outil d’analyse SEO et de prospection automatisée conçu pour identifier rapidement des opportunités commerciales à partir de n’importe quelle URL.  
 Il combine un backend Python/FastAPI, une base SQLite, un frontend React et plusieurs scripts d’audit SEO avancé.
 
-## 🎯 Objectif du projet
+## Objectif du projet
 
 L'objectif de LeadScanner est de :
 - analyser automatiquement un site web pour détecter ses faiblesses SEO
@@ -12,7 +21,7 @@ L'objectif de LeadScanner est de :
 - générer des rapports exploitables
 - préparer un outil complet pour freelances / growth hackers / data analysts
 
-## 🚀 Fonctionnalités principales
+## Fonctionnalités principales
 
 - Analyse SEO complète d’une URL :
 - Récupération du titre, description, H1
@@ -43,7 +52,7 @@ L'objectif de LeadScanner est de :
 - le détail complet des analyses
 - les scores et les erreurs SEO
 
-## 🏗️ Architecture technique
+## Architecture technique
 
 - Backend : FastAPI (Python)
 - Frontend : React + Tailwind + Framer Motion
@@ -51,7 +60,7 @@ L'objectif de LeadScanner est de :
 - Scripts SEO dans backend/scripts/seo_analyzer/
 - Déploiement possible via Netlify (front) et Railway/Render/Fly.io (back)
 
-## 🧠 Comment ça fonctionne ?
+## Comment ça fonctionne ?
 
 1. L’utilisateur envoie une URL au backend via le frontend.
 2. FastAPI appelle le module seo_analyzer.
@@ -64,49 +73,16 @@ L'objectif de LeadScanner est de :
 4. Les résultats sont insérés dans la base SQLite.
 5. Le frontend appelle ensuite l’API pour afficher les résultats.
 
-.## 📂 Organisation du code
+## Exemple de résultat d’analyse
 
-- backend/
-- main.py → endpoints FastAPI
-- models/ → modèles SQLAlchemy
-- scripts/seo_analyzer/ → modules spécialisés
-- seo_analyzer.py → pipeline global
+# {mettre une image}
 
-- frontend/
-- pages/ → pages React
-- components/ → UI
-- services/ → appels API
+## Technologies utilisées
 
-## 🧪 Exemple de résultat d’analyse
-
-- Score global : 72/100
-- Critical issues :
-- Absence de meta description
-- Pas de balise canonical
-- Sitemap introuvable
-- Backlinks détectés : 14
-- Temps de réponse : 340 ms
-
-## 🛠️ Technologies utilisées
-
-- Python 3
+- Python 3.11+
 - FastAPI
 - SQLAlchemy + SQLite
 - Requests / BeautifulSoup
 - React
 - TailwindCSS
-- Framer Motion
-- Netlify (front)
-- API externe pour les backlinks (optionnel)
-
-## 📌 Objectifs futurs
-
-- Génération automatique d’un PDF d’audit
-- Tableau de bord complet (graphes + historique)
-- Suggestions SEO automatiques via LLM
-- Mode “scan de masse” pour analyser plusieurs sites en batch
-- Authentification utilisateur
-
-## 📄 Licence
-
-Projet personnel, non destiné à un usage commercial pour l’instant.
+- API externe pour les backlinks (pas encore implantée)
