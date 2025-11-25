@@ -72,8 +72,10 @@ Le projet repose sur une architecture découplée (Headless) :
 
     Consultez le score, les erreurs critiques et les détails techniques.
 
-## Endpoints API Principaux :
+## Endpoints API Principaux
 
     POST /analyze-url : Lance une analyse et stocke le résultat.
 
     GET /audit/{company_id} : Récupère les détails d'un audit spécifique.
+
+## Images
