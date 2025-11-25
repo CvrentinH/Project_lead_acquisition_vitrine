@@ -1,4 +1,4 @@
-# LeadScanner – Automated SEO & Lead Acquisition Toolkit
+# LeadScanner – SEO Automated & Lead Acquisition Toolkit
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?style=for-the-badge&logo=fastapi&logoColor=white)
@@ -12,6 +12,8 @@
 LeadScanner est un outil d’analyse SEO et de prospection automatisée conçu pour identifier rapidement des opportunités commerciales à partir de n’importe quelle URL.  
 Il combine un backend Python/FastAPI, une base SQLite, un frontend React et plusieurs scripts d’audit SEO avancé.
 
+---
+
 ## Objectif du projet
 
 L'objectif de LeadScanner est de :
@@ -20,6 +22,8 @@ L'objectif de LeadScanner est de :
 - conserver les audits en base pour créer un historique
 - générer des rapports exploitables
 - préparer un outil complet pour freelances / growth hackers / data analysts
+
+---
 
 ## Fonctionnalités principales
 
@@ -52,6 +56,8 @@ L'objectif de LeadScanner est de :
 - le détail complet des analyses
 - les scores et les erreurs SEO
 
+---
+
 ## Architecture technique
 
 - Backend : FastAPI (Python)
@@ -59,6 +65,8 @@ L'objectif de LeadScanner est de :
 - Base de données : SQLite + SQLAlchemy
 - Scripts SEO dans backend/scripts/seo_analyzer/
 - Déploiement possible via Netlify (front) et Railway/Render/Fly.io (back)
+
+---
 
 ## Comment ça fonctionne ?
 
@@ -73,9 +81,13 @@ L'objectif de LeadScanner est de :
 4. Les résultats sont insérés dans la base SQLite.
 5. Le frontend appelle ensuite l’API pour afficher les résultats.
 
+---
+
 ## Exemple de résultat d’analyse
 
 # {mettre une image}
+
+---
 
 ## Technologies utilisées
 
