@@ -81,3 +81,6 @@ Le projet repose sur une architecture découplée (Headless) :
 ---
 
 ## Images
+![Dashboard](dashboard.png)
+![Onpage (sans api)](onpage.png)
+![Offpage](Offpage.png)
