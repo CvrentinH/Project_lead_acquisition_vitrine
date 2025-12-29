@@ -48,9 +48,9 @@ The tool scans the target URL and verifies over 15 control points:
 
 The project relies on a decoupled (Headless) architecture:
 
-* **Backend :** Python 3.11+, FastAPI, SQLAlchemy.
+* **Backend :** Python 3.13+, FastAPI, SQLAlchemy.
 * **Frontend :** React 18, TailwindCSS, Framer Motion.
-* **Database :** SQLite (léger et portable).
+* **Database :** SQLite.
 * **Analysis Engine :** BeautifulSoup4 & Requests (scripts situated in `backend/scripts/seo_analyzer/`).
 
 **Data Flow :**
