@@ -31,7 +31,7 @@ The tool scans the target URL and verifies over 15 control points:
 
 | Catégory | Checks Performed |
 | :--- | :--- |
-| **Méta & Contenu** | Title, Description, Tags H1, Language, Charset |
+| **Meta & Content** | Title, Description, Tags H1, Language, Charset |
 | **Technical** | Robots.txt, Sitemap.xml, HTTPS, Structure URL, Canonical |
 | **Performance** | Server response time, Page weight |
 | **Social & Mobile** | OpenGraph (og:title, og:desc), Twitter Cards, Viewport |
