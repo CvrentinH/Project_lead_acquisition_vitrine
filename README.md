@@ -8,77 +8,64 @@
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4.12-FF9900?style=for-the-badge&logo=python&logoColor=white)
 
-**LeadScanner** est un outil d’analyse SEO et de prospection automatisée conçu pour identifier rapidement des opportunités commerciales à partir de n’importe quelle URL.
-Ce repository github ne sert que de vitrine et démontrer un de mes projets personnels, LeadScanner est en cours de développement, et privé à des fins lucratives
+**LeadScanner** is an automated SEO analysis and lead prospecting tool designed to quickly identify business opportunities from any URL. This GitHub repository serves only as a showcase to demonstrate one of my personal projects. LeadScanner is currently under development and remains private for commercial purposes.
 
 ---
 
-## À propos
+## About
 
-**LeadScanner** combine un backend performant en Python/FastAPI et un frontend moderne en React pour offrir une suite d'audit complète.
+**LeadScanner** combines a high-performance Python/FastAPI backend with a modern React frontend to offer a complete audit suite.
 
-L'objectif du projet est de :
-* **Analyser** automatiquement un site web pour détecter ses faiblesses techniques (SEO).
-* **Identifier** des opportunités et menaces pour l'acquisition de leads.
-* **Historiser** les audits en base de données pour suivre l'évolution.
-* **Générer** des rapports exploitables pour freelances, growth hackers et data analysts.
+The project's goal is to:
+* **Analyze** a website automatically to detect technical weaknesses (SEO).
+* **Identifies** opportunities and threats for lead acquisition.
+* **Log** audit history in a database to track progress over time.
+* **Generate** actionable reports for freelancers, growth hackers, and data analysts.
 
 ---
 
-## Fonctionnalités
+## Features
 
-### Analyse SEO Complète
-L'outil scanne l'URL cible et vérifie plus de 15 points de contrôle :
+### Complete SEO Analysis
+The tool scans the target URL and verifies over 15 control points:
 
-| Catégorie | Vérifications effectuées |
+| Catégory | Checks Performed |
 | :--- | :--- |
-| **Méta & Contenu** | Titre, Description, Balises H1, Langue, Charset |
-| **Technique** | Robots.txt, Sitemap.xml, HTTPS, Structure URL, Canonical |
-| **Performance** | Temps de réponse du serveur, Poids de la page |
+| **Méta & Contenu** | Title, Description, Tags H1, Language, Charset |
+| **Technical** | Robots.txt, Sitemap.xml, HTTPS, Structure URL, Canonical |
+| **Performance** | Server response time, Page weight |
 | **Social & Mobile** | OpenGraph (og:title, og:desc), Twitter Cards, Viewport |
-| **Off-Page** | Détection Favicon, Backlinks (via API ou méthode gratuite) |
+| **Off-Page** | Favicon detection, Backlinks (via API or free method) |
 
 ### Scoring & Reporting
-* **Scoring Global :** Calcul d'une note de santé SEO avec pondération.
-* **Points Critiques :** Génération automatique d'un résumé des erreurs bloquantes.
-* **Historique :** Sauvegarde automatique dans SQLite (Tables `Company` et `SEOAudit`).
+* **Scoring Global :** Calculation of a weighted SEO health score.
+* **Points Critiques :** Automatic generation of a summary of blocking errors.
+* **Historique :** Automatic saving to SQLite (Tables `Company` and `SEOAudit`).
 
 ---
 
-## Architecture Technique
+## Technical Architecture
 
-Le projet repose sur une architecture découplée (Headless) :
+The project relies on a decoupled (Headless) architecture:
 
 * **Backend :** Python 3.11+, FastAPI, SQLAlchemy.
 * **Frontend :** React 18, TailwindCSS, Framer Motion.
-* **Base de données :** SQLite (léger et portable).
-* **Moteur d'analyse :** BeautifulSoup4 & Requests (scripts situés dans `backend/scripts/seo_analyzer/`).
+* **Database :** SQLite (léger et portable).
+* **Analysis Engine :** BeautifulSoup4 & Requests (scripts situated in `backend/scripts/seo_analyzer/`).
 
-**Flux de données :**
-1.  L’utilisateur envoie une URL depuis le Frontend.
-2.  FastAPI déclenche le module `seo_analyzer`.
-3.  Le script télécharge la page, extrait les balises, détecte les erreurs et calcule le score.
-4.  Les résultats sont stockés en base de données.
-5.  Le Frontend récupère le JSON complet pour l'affichage.
+**Data Flow :**
+1.  The user sends a URL from the Frontend.
+2.  FastAPI triggers the `seo_analyzer` module.
+3.  The script downloads the page, extracts tags, detects errors, and calculates the score.
+4.  Results are stored in the database.
+5.  The Frontend retrieves the full JSON for display.
 
 ---
 
-## Utilisation
+## Main API Endpoints
 
-    Assurez-vous que le backend tourne sur http://localhost:8000 et le frontend sur http://localhost:3000.
-
-    Ouvrez votre navigateur sur le port 3000.
-
-    Entrez une URL (ex: https://www.google.com) et lancez l'analyse.
-
-    Consultez le score, les erreurs critiques et les détails techniques.
-
-## Endpoints API Principaux
-
-    POST /analyze-url : Lance une analyse et stocke le résultat.
-
-    GET /audit/{company_id} : Récupère les détails d'un audit spécifique.
-
+    POST /analyze-url : Launches an analysis and stores the result
+    GET /audit/{company_id} : Retrieves details of a specific audit.
 ---
 
 ## Images
