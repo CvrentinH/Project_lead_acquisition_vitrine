@@ -1,12 +1,12 @@
 # LeadScanner – SEO Automated & Lead Acquisition Toolkit
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-3.41-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0-FF0000?style=for-the-badge&logo=sqlalchemy&logoColor=white)
-![React](https://img.shields.io/badge/React-18.2-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4.12-FF9900?style=for-the-badge&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-FF0000?style=for-the-badge&logo=sqlalchemy&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-FF9900?style=for-the-badge&logo=python&logoColor=white)
 
 **LeadScanner** is an automated SEO analysis and lead prospecting tool designed to quickly identify business opportunities from any URL. This GitHub repository serves only as a showcase to demonstrate one of my personal projects. LeadScanner is currently under development and remains private for commercial purposes.
 
